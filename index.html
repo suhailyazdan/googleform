@@ -20,13 +20,27 @@
       justify-content: center;
       padding-bottom: 30px;
     }
+
+    iframe {
+            width: 100%;
+            max-width: 640px; /* Optional: Limit max width for larger screens */
+            height: 100vh; /* Set height to full viewport height */
+            border: none; /* Remove default iframe border */
+    }
+
+    /* Adjust iframe height for smaller screens */
+    @media (max-width: 768px) {
+        iframe {
+            height: 800px; /* Adjust height for tablets and mobile */
+        }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Welcome to OSCC</h1>
     <h2>Fill this form for the registration</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-PBSNW-4zFM2u8BbvgBTOMUMAYKA1VcI4cQKZnOOhu1tIgA/viewform?embedded=true" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-PBSNW-4zFM2u8BbvgBTOMUMAYKA1VcI4cQKZnOOhu1tIgA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </div>
 </body>
 </html>
